@@ -1,0 +1,132 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    /* border: 2px solid red; */
+     }
+    @font-face {
+    font-family: Poppins;
+    src: url("../fonts/Poppins/Poppins-Regular.ttf");
+    }
+    .special{
+    color: #FF4C73 ;
+    font-weight: 900;
+    }
+    .container{
+    max-width: 1120px;
+    margin: auto;
+    }
+    img{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    }
+    header{
+     width: 100%;
+    margin: auto;
+    background: url(../images/headerbackground.png) no-repeat top right;
+    background-size: 51%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    }
+    .nav{
+    max-width: 1116px;
+    /* width: 100%; */
+    margin: auto;
+    padding-top: 48px;
+    /* margin-left: auto;
+    margin-right: 169px; */
+    display: flex;
+    justify-content: space-between;
+    /* padding: 48px 0 100px; */
+    align-items: center;
+    }
+
+    .logo{
+    cursor: pointer;
+    }
+    .navbar_btn{
+    display: none;
+    }
+    .navbar_btn{
+    display: none ;
+    }
+    .menu{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    }
+    .menu > ul{
+        margin: 0;
+    }
+    .menu > li {
+        margin: 0 0 0 18px;
+    }
+    .menu > li a{
+    /* margin-left: 32px; */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 7px 16px;
+
+    border-bottom:1px solid transparent ;
+    text-align: center;
+    }
+    .menu > li a:hover{
+    border-bottom:3px solid #FFFFFF ;
+    }
+
+    .header_flex{
+        display: flex;
+        margin-top: 99px;
+        max-width: 1060px;
+         position: relative;
+    }
+    .header_text{
+        max-width: 598px;
+        border: 2px solid red;
+    }
+    .header_text h1{
+        margin-bottom: 32px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 42px;
+        line-height: 50px;
+        color: #141F57;
+    }
+    .header_text p{
+        margin-bottom: 25px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #182057;
+    }
+    .mobilediv img{
+        position: absolute;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: 0;
+        /* max-width: 494px;
+        height: 613px; */
+    }
+
+    @media(max-width:992px){
+        .header_flex{
+            flex-direction: column-reverse;
+        }
+        .mobilediv img{
+            position: unset;
+        }
+    }
